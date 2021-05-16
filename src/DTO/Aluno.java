@@ -17,7 +17,7 @@ public class Aluno extends Pessoa {
 
     
     
-    
+    private int codigo;
     private int matricula;
     private String cpf;
     private String danasc;
@@ -30,12 +30,21 @@ public class Aluno extends Pessoa {
 
      
 
-    public Aluno(int matricula, String cpf, String danasc, String email, String nome) {
+    public Aluno(int codigo, int matricula, String cpf, String danasc, String email, String nome) {
         super(nome);
+        this.codigo = codigo;
         this.matricula = matricula;
         this.cpf = cpf;
         this.danasc = danasc;
         this.email = email;
+    }
+
+    public int getCodigo() {
+        return codigo;
+    }
+
+    public void setCodigo(int codigo) {
+        this.codigo = codigo;
     }
 
     public int getMatricula() {
@@ -72,7 +81,7 @@ public class Aluno extends Pessoa {
 
     @Override
     public String toString() {
-        return "Aluno{" + "nome=" +  super.getNome() + ", matricula=" + matricula + ", cpf=" + cpf + ", danasc=" + danasc + ", email=" + email + '}';
+        return "Aluno{"+"cod= " + codigo + "nome=" +  super.getNome() + ", matricula=" + matricula + ", cpf=" + cpf + ", danasc=" + danasc + ", email=" + email + '}';
     }
     
     

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<java version="1.8.0_151" class="java.beans.XMLDecoder">
+ <object class="DTO.Aluno">
+  <void property="cpf">
+   <string>111.111.111-11</string>
+  </void>
+  <void property="danasc">
+   <string>12/12/2001</string>
+  </void>
+  <void property="email">
+   <string>rodrigo@gmail.com</string>
+  </void>
+  <void property="matricula">
+   <int>123456789</int>
+  </void>
+  <void property="nome">
+   <string>rodrie1o</string>
+  </void>
+ </object>
+</java>
